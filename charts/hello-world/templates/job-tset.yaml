@@ -19,5 +19,4 @@ spec:
       containers:
       - name: cowsay
         image: docker/whalesay
-        command: ["/bin/sh -c 'echo'"]
-        args: ["Deploying Cowsay!"]
+        command: ["/bin/sh -c 'env'"]
