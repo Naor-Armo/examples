@@ -7,6 +7,7 @@ metadata:
     app: cowsay
   annotations:
     "helm.sh/hook-weight": "-20"
+    "helm.sh/hook-delete-policy": before-hook-creation,hook-succeeded
 spec:
   template:
     metadata:
@@ -17,4 +18,4 @@ spec:
       containers:
       - name: cowsay
         image: docker/whalesay
-        command: ["/bin/sh -c 'env'"]
+        command: ["/bin/sh", "-c", "env"]
