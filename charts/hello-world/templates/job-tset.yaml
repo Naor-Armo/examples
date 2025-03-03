@@ -1,8 +1,6 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  finalizers:
-     - resources-finalizer.argocd.argoproj.io
   name: cowsay-pre-install
   namespace: default
   labels:
