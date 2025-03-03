@@ -7,7 +7,6 @@ metadata:
     app: cowsay
   annotations:
     argocd.argoproj.io/hook: PreSync
-    argocd.argoproj.io/hook-delete-policy: HookSucceeded
     argocd.argoproj.io/sync-wave: "-1"
 spec:
   template:
