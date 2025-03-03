@@ -12,8 +12,6 @@ metadata:
 spec:
   template:
     metadata:
-      finalizers:
-         - resources-finalizer.argocd.argoproj.io
       labels:
         app: cowsay
     spec:
